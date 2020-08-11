@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Digital Notary Chat</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+
+  <section class="c-chat">
+    <header class="c-chat__header">
+      <h1 class="c-chat__header-title">Digital Notary Chat</h1>
+    </header>
+    <div class="c-chat__body">
+      <div id="chat-overlay" class="c-chat__body-overlay"></div>
+      <div id="messages" class="c-chat__body-info"></div>
+    </div>
+    <footer class="c-chat__footer">
+      <input id="chat-input" type="text" autofocus />
+      <button type="button" id="chat-button">Send</button>
+    </footer>
+  </section>
+
+  <script src="https://media.twiliocdn.com/sdk/js/chat/releases/4.0.0/twilio-chat.js"></script>
+  <script>
+    window.$ = window.jQuery = require('jquery');
+  </script>
+  <script src="./index.js"></script>
+</body>
+</html>

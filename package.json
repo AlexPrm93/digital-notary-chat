@@ -1,0 +1,36 @@
+{
+  "name": "digital-notary-chat",
+  "version": "1.0.0",
+  "description": "Part of Digital Notary application",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "nodemon --exec electron ."
+  },
+  "author": "ArGy93",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^9.2.0",
+    "nodemon": "^2.0.4",
+    "jest": "^26.1.0",
+    "jest-extended": "^0.11.5",
+    "jsonwebtoken": "^8.5.1"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "camelcase": "^6.0.0",
+    "dotenv": "^8.2.0",
+    "emoji": "^0.3.2",
+    "emojionearea": "^3.0.0",
+    "express": "^4.17.1",
+    "extend": "^3.0.2",
+    "jquery": "^3.5.1",
+    "pug": "^3.0.0  ",
+    "twilio": "^3.47.0"
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "jest-extended"
+    ]
+  }
+}
