@@ -74,6 +74,4 @@ router.get('/messenger_auth', function(req, res) {
   res.send(req.query["hub.challenge"]);
 });
 
-
-
 module.exports = router;

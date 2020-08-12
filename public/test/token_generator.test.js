@@ -21,6 +21,4 @@ describe('#tokenGenerator', () => {
     expect(token.identity).toEqual(identity);
     expect(decoded).toHaveProperty('payload.grants.identity', token.identity);
   });
-
-
 });

@@ -1,4 +1,5 @@
-require('../node_modules/emojionearea/dist/emojionearea.min.js');
+require('emojionearea');
+const Chat = require('twilio-chat');
 
 $(function() {
   // Get handle to the chat div
@@ -65,7 +66,7 @@ $(function() {
   $.getJSON('/token', function(data) {
 
     // Initialize the Chat client
-    Twilio.Chat.Client.create(data.token).then(client => {
+    Chat.Client.create(data.token).then(client => {
       console.log('Created chat client');
       chatClient = client;
       chatClient.getSubscribedChannels().then(createOrJoinGeneralChannel);

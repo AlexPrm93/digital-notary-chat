@@ -1,4 +1,4 @@
-@import './css/emojionearea.css';
+@import './emojionearea.css';
 
 * {
   box-sizing:border-box;
@@ -117,6 +117,7 @@ html, body {
 
 .c-message {
   display: flex;
+  align-items: flex-start;
   margin-right: 15px;
   margin-bottom: 5px;
 }

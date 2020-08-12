@@ -1,4 +1,4 @@
-const { app, BrowserWindow, globalShortcut  } = require('electron')
+const { app, BrowserWindow, globalShortcut } = require('electron')
 const { format } = require('url')
 const path = require('path')
 require('./app.js')
@@ -8,8 +8,6 @@ const isDev = process.env.NODE_ENV !== 'production' ? true : false
 const isMac = process.platform === 'darvin' ? true : false
 const port = process.env.PORT || 3000
 let mainWindow
-
-// console.log(process.env);
 
 function createWindow () {
   mainWindow = new BrowserWindow({
